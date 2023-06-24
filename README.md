@@ -13,3 +13,51 @@ Personal Financial Tracker is a web application built with Node.js, Express.js, 
 - **Data Storage and Persistence**: MongoDB is utilized to store user data, ensuring data persistence and reliable access to financial records.
 
 - **Clean and Neat UI**: The user interface is designed with Tailwind CSS, offering an elegant and user-friendly experience with a modern aesthetic.
+
+<h1 align="center" id="title">Personal-Financial-Tracker</h1>
+
+<h2>🛠️ Installation Steps:</h2>
+
+<p>1. Clone the Repository:</p>
+
+```
+git clone https://github.com/Siddhartha-0709/personal-financial-tracker
+```
+
+<p>2. Install node.js packages:</p>
+
+```
+npm install
+```
+
+<p>3. Start the Server:</p>
+
+```
+npm start
+```
+
+<p>4. Enter the link in the web-browser:</p>
+
+```
+http://localhost:8000/
+```
+
+  
+  
+<h2>💻 Built with</h2>
+
+Technologies used in the project:
+
+*   HTML
+*   CSS
+*   JavaScript
+*   Node JS
+*   Express JS
+*   EJS
+*   Tailwind CSS
+*   GitHub Co-Pilot
+*   Chat GPT
+*   Google Firebase
+*   MongoDB
+
+<h2>💖Like my work?</h2>

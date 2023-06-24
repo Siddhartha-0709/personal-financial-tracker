@@ -4,6 +4,7 @@
   "description": "Code for Fastest Coder First Hackathon for making Personal Finance Tracker",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Siddhartha Mukherjee",

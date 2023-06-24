@@ -179,10 +179,13 @@ app.post("/post", function (req, res) {
   async function saveTransactionPost() {
     await newTransaction.save();
   }
-  saveTransactionPost();
-  console.log(newTransaction);
-  update(userId,res);
+  saveTransactionPost().then(() => {
+    console.log(newTransaction);
+    update(userId, res); // Reload the EJS file with updated data
+  });
 });
+
 app.listen(PORT, function (req, res) {
   console.log(`Server started on port ${PORT}`);
 });
+

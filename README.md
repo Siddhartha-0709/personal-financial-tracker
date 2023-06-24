@@ -60,4 +60,3 @@ Technologies used in the project:
 *   Google Firebase
 *   MongoDB
 
-<h2>💖Like my work?</h2>

@@ -2,7 +2,7 @@
 
 Personal Financial Tracker is a web application built with Node.js, Express.js, MongoDB, and Firebase integration. It provides users with a convenient way to track their income and expenses, offering multi-device sync support and a clean and intuitive user interface designed with Tailwind CSS.
 
-## Features
+<h2>⚙️ Features:</h2>
 
 - **Income and Expense Tracking**: Users can easily input and track their income and expenses, allowing for a comprehensive overview of their financial transactions.
 
@@ -41,8 +41,6 @@ npm start
 ```
 http://localhost:8000/
 ```
-
-  
   
 <h2>💻 Built with</h2>
 
@@ -60,6 +58,10 @@ Technologies used in the project:
 *   GitHub Co-Pilot
 *   Chat GPT
 
-<h2>💻 Deployed at: </h2>
+<h2>🌐 Deployed at: </h2>
 
 https://personal-financial-tracker.cyclic.app/
+
+<h2>👦Developer Information</h2>
+
+Siddhartha Mukherjee

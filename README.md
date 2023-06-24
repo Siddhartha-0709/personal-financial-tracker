@@ -54,9 +54,9 @@ Technologies used in the project:
 *   Node JS
 *   Express JS
 *   EJS
+*   MongoDB
+*   Google Firebase
 *   Tailwind CSS
 *   GitHub Co-Pilot
 *   Chat GPT
-*   Google Firebase
-*   MongoDB
 

@@ -14,7 +14,6 @@ Personal Financial Tracker is a web application built with Node.js, Express.js, 
 
 - **Clean and Neat UI**: The user interface is designed with Tailwind CSS, offering an elegant and user-friendly experience with a modern aesthetic.
 
-<h1 align="center" id="title">Personal-Financial-Tracker</h1>
 
 <h2>🛠️ Installation Steps:</h2>
 

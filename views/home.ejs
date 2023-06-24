@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Personal Finance Tracker</title>
+  </head>
+  <style>
+    .scroll-view {
+      height: 200px;
+      /* Set the desired height */
+      overflow: auto;
+      /* Enable scrolling */
+    }
+  </style>
+  <body class="bg-gray-100" style="background-color: #001c30">
+    <div class="rounded-lg m-5 p-6 bg-white shadow-md">
+      <h1 class="text-3xl font-bold">
+        Welcome to your Personal Finance Tracker Application
+      </h1>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 grid-rows-1 gap-4 m-5">
+      <div class="p-6 bg-white border border-gray-200 rounded-lg shadow">
+        <h1 class="text-2xl font-bold mb-4">Current Account Status</h1>
+        <div class="flex items-center mb-2">
+          <label class="text-xl font-bold mr-2" for=""
+            >Available Balance:</label
+          >
+          <% if (data.length === 0) { %>
+          <h1 class="text-xl font-bold text-indigo-600">0</h1>
+          <% } else { %>
+          <h1 class="text-xl font-bold text-indigo-600">
+            <%= data[data.length - 1].balance %>
+          </h1>
+          <% } %>
+        </div>
+        <div class="flex items-center">
+          <label class="text-xl font-bold mr-2" for="">Current Date:</label>
+          <h1 class="text-xl font-bold mr-2 text-indigo-600"><%= date %></h1>
+          <input
+            name="date"
+            type="text"
+            readonly
+            class="text-xl font-bold text-indigo-600"
+          />
+        </div>
+        <div class="p-6 bg-white border border-gray-200 rounded-lg shadow">
+          <form action="/post" method="post" class="max-w-sm mx-auto">
+            <h1 class="text-2xl font-bold mb-4">Add New Transaction:</h1>
+            <select name="userId" id="" style="visibility: hidden">
+              <option value="<%= userId %>"><%= userId %></option>
+            </select>
+            <h1 class="text-xl font-bold mb-4">Select Transaction Type</h1>
+            <select
+              name="type"
+              class="block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500"
+            >
+              <option value="income">Income</option>
+              <option value="expense">Expense</option>
+            </select>
+            <h1 class="text-xl font-bold mt-4 mb-2">
+              Enter Purpose of Transaction
+            </h1>
+            <input
+              type="text"
+              name="purpose"
+              class="block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500"
+              placeholder="Enter purpose for the transaction"
+            />
+            <h1 class="text-xl font-bold mt-4 mb-2">Enter Amount</h1>
+            <input
+              type="number"
+              name="amount"
+              class="block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500"
+              placeholder="Enter your transaction amount"
+            />
+            <input
+              type="number"
+              name="balance"
+              class="block w-full p-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:border-indigo-500"
+              placeholder=""
+              value="<% if (data.length === 0) { %>0<% } else { %><%= data[data.length - 1].balance %><% } %>"
+              style="visibility: hidden"
+            />
+
+            <div class="flex justify-center mt-6">
+              <input
+                type="submit"
+                value="Submit"
+                class="px-4 py-2 text-sm font-medium text-white bg-indigo-600 border border-transparent rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+              />
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="p-6 bg-white border border-gray-200 rounded-lg shadow">
+        <h1 class="text-2xl font-bold mb-4">Your Transaction Statement</h1>
+        <div class="scroll-view">
+          <table class="w-full border border-gray-200">
+            <thead class="text-indigo-600 text-lg">
+              <tr>
+                <th class="border border-gray-200 py-2 px-4">Date</th>
+                <th class="border border-gray-200 py-2 px-4">Type</th>
+                <th class="border border-gray-200 py-2 px-4">Purpose</th>
+                <th class="border border-gray-200 py-2 px-4">Amount</th>
+                <th class="border border-gray-200 py-2 px-4">Balance</th>
+              </tr>
+            </thead>
+            <tbody class="text-center text-gray-700 text-lg">
+              <% if (data.length === 0) { %>
+              <p class="text-sm text-gray-500 mb-6">
+                No data found for this user.
+              </p>
+              <% } else { %> <% data.forEach((entry) => { %>
+              <tr>
+                <td class="border border-gray-200 py-2 px-4">
+                  <%= entry.date %>
+                </td>
+                <td class="border border-gray-200 py-2 px-4">
+                  <%= entry.type %>
+                </td>
+                <td class="border border-gray-200 py-2 px-4">
+                  <%= entry.purpose %>
+                </td>
+                <td class="border border-gray-200 py-2 px-4">
+                  <%= entry.amount %>
+                </td>
+                <td class="border border-gray-200 py-2 px-4">
+                  <%= entry.balance %>
+                </td>
+              </tr>
+              <% }); %> <% } %>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

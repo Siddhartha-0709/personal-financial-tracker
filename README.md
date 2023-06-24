@@ -14,6 +14,16 @@ Personal Financial Tracker is a web application built with Node.js, Express.js, 
 
 - **Clean and Neat UI**: The user interface is designed with Tailwind CSS, offering an elegant and user-friendly experience with a modern aesthetic.
 
+<h2>🛠️ Project Screenshots:</h2>
+
+<img src="https://i.ibb.co/JRQqDt9/ss-1.png" alt="ss-1" border="0">
+https://drive.google.com/file/d/1jWqYtm39--glGrqyz4VTisALkJPvccbN/view?usp=drive_link
+<img src="https://i.ibb.co/C1MzMr8/ss2.png" alt="ss2" border="0">
+https://drive.google.com/file/d/18t9kmRDIUyFBWLDcOSaNIb315u5vutZR/view?usp=sharing
+
+<h2>🌐 Video Demonstration of This Project </h2>
+
+https://www.youtube.com/watch?v=oRop4NLjkmE
 
 <h2>🛠️ Installation Steps:</h2>
 
@@ -60,6 +70,7 @@ Technologies used in the project:
 <h2>🌐 Deployed at: </h2>
 
 https://personal-financial-tracker.cyclic.app/
+
 
 <h2>👦Developer Information</h2>
 

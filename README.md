@@ -17,9 +17,7 @@ Personal Financial Tracker is a web application built with Node.js, Express.js, 
 <h2>🛠️ Project Screenshots:</h2>
 
 <img src="https://i.ibb.co/JRQqDt9/ss-1.png" alt="ss-1" border="0">
-https://drive.google.com/file/d/1jWqYtm39--glGrqyz4VTisALkJPvccbN/view?usp=drive_link
 <img src="https://i.ibb.co/C1MzMr8/ss2.png" alt="ss2" border="0">
-https://drive.google.com/file/d/18t9kmRDIUyFBWLDcOSaNIb315u5vutZR/view?usp=sharing
 
 <h2>🌐 Video Demonstration of This Project </h2>
 

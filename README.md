@@ -60,3 +60,6 @@ Technologies used in the project:
 *   GitHub Co-Pilot
 *   Chat GPT
 
+<h2>💻 Deployed at: </h2>
+
+https://personal-financial-tracker.cyclic.app/

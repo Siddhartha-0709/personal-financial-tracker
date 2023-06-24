@@ -20,6 +20,7 @@ const app = express();
 const PORT = process.env.PORT || 8000;
 const mongoose = require("mongoose");
 const { resolve } = require("path/posix");
+app.use(express.static("public"));
 
 async function main() {
     await mongoose.connect(

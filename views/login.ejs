@@ -1,32 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Finance</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="public/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="public/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="public/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Login and Signup Form</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-</head>
-
-<body class="bg-gray-100" style="background-color: #001c30">
-  <div class="flex h-screen justify-center items-center">
-    <div class="bg-white p-8 shadow-md rounded-md">
-      <h1 class="text-2xl font-bold mb-4">Welcome to your Personal Finance Tracker</h1>
-      <h1 class="text-2xl font-bold mb-4">Log In to Your Account</h1>
-      <form method="post" action="/login">
-        <div class="mb-4">
-          <label class="block text-gray-700 font-bold mb-2" for="email">Email:</label>
-          <input class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500" type="email" id="email" name="email" placeholder="Enter your email">
-        </div>
-        <div class="mb-4">
-          <label class="block text-gray-700 font-bold mb-2" for="password">Password:</label>
-          <input name="pass1" class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500" type="password" id="password"  placeholder="Enter your password">
-        </div>
-        <button class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500" type="submit">Login to your Account</button>
-      </form>
-      <p class="mt-4 text-gray-600 text-sm">Don't have an account? <a href="/" class="text-indigo-600 font-medium">Sign Up</a></p>
+  <body class="bg-gray-100" style="background-color: #001c30">
+    <center>
+      <div class="rounded-lg mt-8 ml-8 mr-9" style="background-color: antiquewhite;">
+        <br>
+        <h1 class="text-2xl font-bold mb-4">Fastest Coder Hackathon Project</h1>
+        <br>
+      </div>
+    </center>
+    <div class="flex h-screen justify-center items-center">
+      <div class="bg-white p-8 shadow-md rounded-md">
+        <h1 class="text-2xl font-bold mb-4">
+          Welcome to your Personal Finance Tracker
+        </h1>
+        <h1 class="text-2xl font-bold mb-4">Log In to Your Account</h1>
+        <form method="post" action="/login">
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="email"
+              >Email:</label
+            >
+            <input
+              class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Enter your email"
+            />
+          </div>
+          <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2" for="password"
+              >Password:</label
+            >
+            <input
+              name="pass1"
+              class="w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:border-indigo-500"
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button
+            class="bg-indigo-600 text-white px-4 py-2 rounded-md hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            type="submit"
+          >
+            Login to your Account
+          </button>
+        </form>
+        <p class="mt-4 text-gray-600 text-sm">
+          Don't have an account?
+          <a href="/" class="text-indigo-600 font-medium">Sign Up</a>
+        </p>
+      </div>
     </div>
-  </div>
-</body>
-
+  </body>
 </html>
